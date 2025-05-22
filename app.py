@@ -1,10 +1,9 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 
-# Laad model met pickle
-with open("random_forest_montage_model.pkl", "rb") as f:
-    model = pickle.load(f)
+# Laad model met joblib
+model = joblib.load("random_forest_montage_model.pkl")
 
 # Titel
 st.title("Voorspelling Montage Uitgaven")

@@ -5,7 +5,7 @@ Deze app voorspelt de montage-uitgaven op basis van jaar, maand en tijdindex, ge
 ## 🔧 Functies
 
 - Input: Jaar, Maand, TijdIndex
-- Model: Random Forest (geladen via Pickle)
+- Model: Random Forest (geladen via Joblib)
 - Output: Geschatte montage-uitgaven in euro's
 
 ## 🚀 Gebruikslocaties
@@ -34,5 +34,5 @@ streamlit run app.py
 ## 📂 Bestanden
 
 - `app.py` — hoofdapplicatie
-- `random_forest_montage_model.pkl` — getraind model
+- `random_forest_montage_model.pkl` — getraind model (Joblib)
 - `requirements.txt` — afhankelijkheden
