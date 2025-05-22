@@ -2,14 +2,37 @@
 
 Deze app voorspelt de montage-uitgaven op basis van jaar, maand en tijdindex, gebruikmakend van een getraind Random Forest-model.
 
-## Gebruik
+## 🔧 Functies
 
-1. Vul `Jaar`, `Maand` en `TijdIndex` in
-2. Klik op "Voorspel"
-3. Bekijk de verwachte montage-uitgaven
+- Input: Jaar, Maand, TijdIndex
+- Model: Random Forest (geladen via Pickle)
+- Output: Geschatte montage-uitgaven in euro's
 
-## Deploy op Streamlit Cloud
+## 🚀 Gebruikslocaties
 
-1. Upload alles naar GitHub
+### ▶️ Lokaal draaien
+
+1. Installeer vereisten:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Start de app:
+
+```bash
+streamlit run app.py
+```
+
+### ☁️ Online via Streamlit Cloud
+
+1. Upload deze bestanden naar GitHub
 2. Ga naar [https://streamlit.io/cloud](https://streamlit.io/cloud)
-3. Selecteer deze repo en `app.py` als entry point
+3. Selecteer deze repo, kies `app.py` als entry point
+4. Klik op **Deploy**
+
+## 📂 Bestanden
+
+- `app.py` — hoofdapplicatie
+- `random_forest_montage_model.pkl` — getraind model
+- `requirements.txt` — afhankelijkheden
